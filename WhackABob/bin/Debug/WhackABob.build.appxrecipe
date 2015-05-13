@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>WIN-7LVPGLL54KI</Machine>
+    <WindowsUser>NAJERA</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>987d4130-16ac-4ebf-afc5-067f80cef3d0</PackageIdentityName>
+    <IntermediateOutputPath>C:\Projetos\WhackABob\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Projetos\WhackABob\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\bin\Debug\WhackABob.exe">
+      <PackagePath>WhackABob.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\Assets\150x150.png">
+      <PackagePath>Assets\150x150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\Assets\310x150.png">
+      <PackagePath>Assets\310x150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\Assets\44x44.scale-100.png">
+      <PackagePath>Assets\44x44.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\Assets\480x800.png">
+      <PackagePath>Assets\480x800.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\Assets\50x50.png">
+      <PackagePath>Assets\50x50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\Assets\71x71.png">
+      <PackagePath>Assets\71x71.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\Assets\Square71x71Logo.scale-100.png">
+      <PackagePath>Assets\Square71x71Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\Assets\WideLogo.scale-100.png">
+      <PackagePath>Assets\WideLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\Html\css\phone.css">
+      <PackagePath>Html\css\phone.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\Html\css\style16.css">
+      <PackagePath>Html\css\style16.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\Html\imagens\bobtabor.jpg">
+      <PackagePath>Html\imagens\bobtabor.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\Html\index.html">
+      <PackagePath>Html\index.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\Html\scripts\jquery.js">
+      <PackagePath>Html\scripts\jquery.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\Html\scripts\script16.js">
+      <PackagePath>Html\scripts\script16.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\bin\Debug\WhackABob.xr.xml">
+      <PackagePath>WhackABob.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\WhackABob\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
