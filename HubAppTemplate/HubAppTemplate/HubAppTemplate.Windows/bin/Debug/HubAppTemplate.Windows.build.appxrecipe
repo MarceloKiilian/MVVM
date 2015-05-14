@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>WIN-7LVPGLL54KI</Machine>
+    <WindowsUser>NAJERA</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>8398ebb6-e2c3-41f5-8e6f-dc7529df61a1</PackageIdentityName>
+    <IntermediateOutputPath>C:\Projetos\MVVM\HubAppTemplate\HubAppTemplate\HubAppTemplate.Windows\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Projetos\MVVM\HubAppTemplate\HubAppTemplate\HubAppTemplate.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Projetos\MVVM\HubAppTemplate\HubAppTemplate\HubAppTemplate.Windows\bin\Debug\HubAppTemplate.Windows.exe">
+      <PackagePath>HubAppTemplate.Windows.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\MVVM\HubAppTemplate\HubAppTemplate\HubAppTemplate.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\MVVM\HubAppTemplate\HubAppTemplate\HubAppTemplate.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\MVVM\HubAppTemplate\HubAppTemplate\HubAppTemplate.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\MVVM\HubAppTemplate\HubAppTemplate\HubAppTemplate.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\MVVM\HubAppTemplate\HubAppTemplate\HubAppTemplate.Windows\Assets\WideLogo.scale-100.png">
+      <PackagePath>Assets\WideLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\MVVM\HubAppTemplate\HubAppTemplate\HubAppTemplate.Shared\Assets\LightGray.png">
+      <PackagePath>Assets\LightGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\MVVM\HubAppTemplate\HubAppTemplate\HubAppTemplate.Shared\Assets\MediumGray.png">
+      <PackagePath>Assets\MediumGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\MVVM\HubAppTemplate\HubAppTemplate\HubAppTemplate.Shared\Assets\DarkGray.png">
+      <PackagePath>Assets\DarkGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\MVVM\HubAppTemplate\HubAppTemplate\HubAppTemplate.Shared\DataModel\SampleData.json">
+      <PackagePath>DataModel\SampleData.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\MVVM\HubAppTemplate\HubAppTemplate\HubAppTemplate.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\MVVM\HubAppTemplate\HubAppTemplate\HubAppTemplate.Windows\bin\Debug\HubPage.xbf">
+      <PackagePath>HubPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\MVVM\HubAppTemplate\HubAppTemplate\HubAppTemplate.Windows\bin\Debug\SectionPage.xbf">
+      <PackagePath>SectionPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\MVVM\HubAppTemplate\HubAppTemplate\HubAppTemplate.Windows\bin\Debug\ItemPage.xbf">
+      <PackagePath>ItemPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\MVVM\HubAppTemplate\HubAppTemplate\HubAppTemplate.Windows\bin\Debug\HubAppTemplate.Windows.xr.xml">
+      <PackagePath>HubAppTemplate.Windows.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\MVVM\HubAppTemplate\HubAppTemplate\HubAppTemplate.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

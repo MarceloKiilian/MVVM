@@ -1,0 +1,1 @@
+C:\Projetos\MVVM\HubAppTemplate\HubAppTemplate\HubAppTemplate.Windows\HubAppTemplate.Windows.csproj;neutral

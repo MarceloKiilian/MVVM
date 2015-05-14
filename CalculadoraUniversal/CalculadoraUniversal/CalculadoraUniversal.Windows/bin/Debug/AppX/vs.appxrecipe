@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>WIN-7LVPGLL54KI</Machine>
+    <WindowsUser>NAJERA</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>3b5cc27c-cfef-44cb-9861-ea444b1a4a2e</PackageIdentityName>
+    <IntermediateOutputPath>C:\Projetos\CalculadoraUniversal\CalculadoraUniversal\CalculadoraUniversal.Windows\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>8CE37934031BC70479A5A0DA25CE4C0ACA95D8431DCEC82D3E7C84BDB5AFB745</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>3b5cc27c-cfef-44cb-9861-ea444b1a4a2e_1.0.0.0_neutral__e6f0rnjc16vy2</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>3b5cc27c-cfef-44cb-9861-ea444b1a4a2e_e6f0rnjc16vy2!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>3b5cc27c-cfef-44cb-9861-ea444b1a4a2e</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=NAJERA</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Projetos\CalculadoraUniversal\CalculadoraUniversal\CalculadoraUniversal.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-05-09T12:58:55.664</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Projetos\CalculadoraUniversal\CalculadoraUniversal\CalculadoraUniversal.Windows\bin\Debug\CalculadoraUniversal.Windows.exe">
+      <PackagePath>CalculadoraUniversal.Windows.exe</PackagePath>
+      <Modified>2015-05-09T12:58:52.153</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\CalculadoraUniversal\CalculadoraUniversal\CalculadoraUniversal.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T17:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\CalculadoraUniversal\CalculadoraUniversal\CalculadoraUniversal.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T17:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\CalculadoraUniversal\CalculadoraUniversal\CalculadoraUniversal.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T17:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\CalculadoraUniversal\CalculadoraUniversal\CalculadoraUniversal.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T17:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\CalculadoraUniversal\CalculadoraUniversal\CalculadoraUniversal.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-05-09T12:58:51.617</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\CalculadoraUniversal\CalculadoraUniversal\CalculadoraUniversal.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-05-09T12:58:51.620</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\CalculadoraUniversal\CalculadoraUniversal\CalculadoraUniversal.Windows\bin\Debug\CalculadoraUniversal.Windows.xr.xml">
+      <PackagePath>CalculadoraUniversal.Windows.xr.xml</PackagePath>
+      <Modified>2015-05-09T12:58:51.543</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projetos\CalculadoraUniversal\CalculadoraUniversal\CalculadoraUniversal.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-05-09T12:58:53.523</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

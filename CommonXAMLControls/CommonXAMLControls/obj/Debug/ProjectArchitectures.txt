@@ -1,0 +1,1 @@
+C:\Projetos\CommonXAMLControls\CommonXAMLControls\CommonXAMLControls.csproj;neutral

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings xmlns="http://schemas.datacontract.org/2004/07/RssStarterKit.Configuration" xmlns:m="http://schemas.datacontract.org/2004/07/RssStarterKit.Models">
+
+  <AdInfo>
+    <AdUnitId></AdUnitId>
+    <ApplicationId></ApplicationId>
+  </AdInfo>
+
+  <PreviewEnabled>false</PreviewEnabled>
+
+  <RefreshIntervalInMinutes>60</RefreshIntervalInMinutes>
+
+  <RssFeeds>
+    <m:RssFeed>
+      <m:RssUrl>http://globoesporte.globo.com/servico/semantica/editorias/plantao/motor/formula-1/feed.rss</m:RssUrl>
+      <m:Title>Globo - F1</m:Title>
+    </m:RssFeed>
+    <m:RssFeed>
+      <m:RssUrl>http://esporte.uol.com.br/f1/ultimas/index.xml</m:RssUrl>
+      <m:Title>UOL - F1</m:Title>
+    </m:RssFeed>
+    <m:RssFeed>
+      <m:RssUrl>http://esportes.r7.com/automobilismo/feed.xml</m:RssUrl>
+      <m:Title>R7 - F1</m:Title>
+    </m:RssFeed>
+  </RssFeeds>
+
+  <Theme>
+    <BodyForeground>White</BodyForeground>
+    <BodyBackground>Black</BodyBackground>
+  </Theme>
+
+  <Title>RSS F1</Title>
+
+  <Version>1</Version>
+
+</Settings>

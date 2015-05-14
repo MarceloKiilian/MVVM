@@ -1,0 +1,1 @@
+C:\Projetos\NavigationExample\NavigationExample\NavigationExample.csproj;neutral

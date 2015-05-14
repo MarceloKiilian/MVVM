@@ -1,0 +1,1 @@
+C:\Projetos\TipCalculator\TipCalculator\TipCalculator.csproj;neutral
