@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Runtime.Serialization;
+using System.Runtime.Serialization.Json;
 using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -25,6 +26,10 @@ namespace StoringRetrievingSerlizing
     /// </summary>
     public sealed partial class MainPage : Page
     {
+
+        private const string XMLFILENAME = "data.xml";
+        private const string JSONFILENAME = "data.json";
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -50,8 +55,8 @@ namespace StoringRetrievingSerlizing
             return myCars;
         }
 
-        private const string XMLFILENAME = "data.xml";
 
+        #region "Async"
         private async Task writeXMLAsync()
         {
             var myCars = buildObjectGraph();
@@ -81,6 +86,56 @@ namespace StoringRetrievingSerlizing
             resultTextBlock.Text = content;
         }
 
+        #endregion
+
+        private async Task writeJsonAsync()
+        {
+            var myCars = buildObjectGraph();
+
+            var serializer = new DataContractJsonSerializer(typeof(List<Car>));
+
+            using (var stream = await ApplicationData.Current.LocalFolder.OpenStreamForWriteAsync(JSONFILENAME, CreationCollisionOption.ReplaceExisting))
+            {
+                serializer.WriteObject(stream, myCars);
+            }
+
+            resultTextBlock.Text = "Escrito com sucesso";
+        }
+
+        private async Task readJsonAsync()
+        {
+            string content = String.Empty;
+
+            var myStream = await ApplicationData.Current.LocalFolder.OpenStreamForReadAsync(JSONFILENAME);
+
+            using (StreamReader reader = new StreamReader(myStream))
+            {
+                content = await reader.ReadToEndAsync();
+            }
+
+            resultTextBlock.Text = content;
+        }
+
+        private async Task deserializeJsonAsync()
+        {
+            string content = String.Empty;
+
+            List<Car> myCars;
+
+            var jsonSerializer = new DataContractJsonSerializer(typeof(List<Car>));
+
+            var myStream = await ApplicationData.Current.LocalFolder.OpenStreamForReadAsync(JSONFILENAME);
+
+            myCars = (List<Car>)jsonSerializer.ReadObject(myStream);
+
+            foreach (var car in myCars)
+            {
+                content += String.Format("ID:{0}, Make:{1}, Model:{2}, Year:{3}", car.id, car.Make, car.Model, car.Year);
+            }
+
+            resultTextBlock.Text = content;
+        }
+
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
         /// </summary>
@@ -99,12 +154,15 @@ namespace StoringRetrievingSerlizing
 
         private async void writeButton_Click(object sender, RoutedEventArgs e)
         {
-            await writeXMLAsync();
+            //await writeXMLAsync();
+            await writeJsonAsync();
         }
 
         private async void readButton_Click(object sender, RoutedEventArgs e)
         {
-            await readXMLAsync();
+            //await readXMLAsync();
+            //await readJsonAsync();
+            await deserializeJsonAsync();
         }
     }
 }
