@@ -7,13 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ILoveCupcakes", "ILoveCupca
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ILoveCupcakes.Shared", "ILoveCupcakes\ILoveCupcakes.Shared\ILoveCupcakes.Shared.shproj", "{6EDB4C90-4F84-4564-930E-7B267F0B0F36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILoveCupcakes.Windows", "ILoveCupcakes\ILoveCupcakes.Windows\ILoveCupcakes.Windows.csproj", "{555DB8C6-7356-4069-9C1E-E625617D9C41}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILoveCupcakes.WindowsPhone", "ILoveCupcakes\ILoveCupcakes.WindowsPhone\ILoveCupcakes.WindowsPhone.csproj", "{533B05F4-D589-40B7-94C8-51E70DE38054}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		ILoveCupcakes\ILoveCupcakes.Shared\ILoveCupcakes.Shared.projitems*{555db8c6-7356-4069-9c1e-e625617d9c41}*SharedItemsImports = 4
 		ILoveCupcakes\ILoveCupcakes.Shared\ILoveCupcakes.Shared.projitems*{533b05f4-d589-40b7-94c8-51e70de38054}*SharedItemsImports = 4
 		ILoveCupcakes\ILoveCupcakes.Shared\ILoveCupcakes.Shared.projitems*{6edb4c90-4f84-4564-930e-7b267f0b0f36}*SharedItemsImports = 13
 	EndGlobalSection
@@ -28,30 +25,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Debug|ARM.ActiveCfg = Debug|ARM
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Debug|ARM.Build.0 = Debug|ARM
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Debug|ARM.Deploy.0 = Debug|ARM
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Debug|x64.ActiveCfg = Debug|x64
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Debug|x64.Build.0 = Debug|x64
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Debug|x64.Deploy.0 = Debug|x64
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Debug|x86.ActiveCfg = Debug|x86
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Debug|x86.Build.0 = Debug|x86
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Debug|x86.Deploy.0 = Debug|x86
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Release|Any CPU.Build.0 = Release|Any CPU
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Release|ARM.ActiveCfg = Release|ARM
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Release|ARM.Build.0 = Release|ARM
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Release|ARM.Deploy.0 = Release|ARM
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Release|x64.ActiveCfg = Release|x64
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Release|x64.Build.0 = Release|x64
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Release|x64.Deploy.0 = Release|x64
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Release|x86.ActiveCfg = Release|x86
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Release|x86.Build.0 = Release|x86
-		{555DB8C6-7356-4069-9C1E-E625617D9C41}.Release|x86.Deploy.0 = Release|x86
 		{533B05F4-D589-40B7-94C8-51E70DE38054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{533B05F4-D589-40B7-94C8-51E70DE38054}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{533B05F4-D589-40B7-94C8-51E70DE38054}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
@@ -78,7 +51,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6EDB4C90-4F84-4564-930E-7B267F0B0F36} = {6157C05D-DDE9-45BC-B6B0-ADED9A4AB48B}
-		{555DB8C6-7356-4069-9C1E-E625617D9C41} = {6157C05D-DDE9-45BC-B6B0-ADED9A4AB48B}
 		{533B05F4-D589-40B7-94C8-51E70DE38054} = {6157C05D-DDE9-45BC-B6B0-ADED9A4AB48B}
 	EndGlobalSection
 EndGlobal

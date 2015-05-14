@@ -14,7 +14,7 @@
         <ResourceDictionary>
             <ResourceDictionary.ThemeDictionaries>
                 <ResourceDictionary x:Key="Default">
-                    <ImageBrush x:Key="HubBackgroundImageBrush" ImageSource="Assets/HubBackground.png"/>
+                    <ImageBrush x:Key="HubBackgroundImageBrush" ImageSource="Assets/ilovecupcakes-background.png"/>
                 </ResourceDictionary>
                 <ResourceDictionary x:Key="HighContrast">
                     <ImageBrush x:Key="HubBackgroundImageBrush" ImageSource="{x:Null}"/>
@@ -71,7 +71,11 @@
     </Page.Resources>
 
     <Grid x:Name="LayoutRoot">
-        <Hub x:Name="Hub" x:Uid="Hub" Header="application name" Background="{ThemeResource HubBackgroundImageBrush}">
+        <Hub x:Name="Hub" 
+             x:Uid="Hub" 
+             Header="i Love CupCakes" 
+             Background="{ThemeResource HubBackgroundImageBrush}">
+            <!--
             <HubSection x:Uid="HubSection1" Header="SECTION 1" DataContext="{Binding Groups}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
                 <DataTemplate>
                     <ListView
@@ -89,9 +93,10 @@
                     </ListView>
                 </DataTemplate>
             </HubSection>
-
-            <HubSection x:Uid="HubSection2" Header="SECTION 2" Width="Auto"
-                         DataContext="{Binding Groups[0]}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
+            -->
+            <HubSection x:Uid="HubSection2" 
+                        Header="Receitas" Width="Auto"
+                        DataContext="{Binding Groups[0]}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
                 <DataTemplate>
                     <GridView
                         Margin="0,9.5,0,0"
@@ -112,7 +117,7 @@
                 </DataTemplate>
             </HubSection>
 
-            <HubSection x:Uid="HubSection3" Header="SECTION 3"
+            <HubSection x:Uid="HubSection3" Header="Vídeos"
                         DataContext="{Binding Groups[1]}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
                 <DataTemplate>
                     <ListView 
@@ -127,7 +132,7 @@
                     </ListView>
                 </DataTemplate>
             </HubSection>
-
+<!--
             <HubSection x:Uid="HubSection4" Header="SECTION 4"
                         DataContext="{Binding Groups[2]}" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
                 <DataTemplate>
@@ -166,6 +171,7 @@
                     </ListView>
                 </DataTemplate>
             </HubSection>
+            -->
         </Hub>
     </Grid>
 </Page>

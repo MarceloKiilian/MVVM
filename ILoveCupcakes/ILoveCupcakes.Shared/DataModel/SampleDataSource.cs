@@ -23,10 +23,11 @@ namespace ILoveCupcakes.Data
     /// </summary>
     public class SampleDataItem
     {
-        public SampleDataItem(String uniqueId, String title, String subtitle, String imagePath, String description, String content)
+        public SampleDataItem(String uniqueId, String title, String type, String subtitle, String imagePath, String description, String content)
         {
             this.UniqueId = uniqueId;
             this.Title = title;
+            this.Type = type;
             this.Subtitle = subtitle;
             this.Description = description;
             this.ImagePath = imagePath;
@@ -35,6 +36,7 @@ namespace ILoveCupcakes.Data
 
         public string UniqueId { get; private set; }
         public string Title { get; private set; }
+        public string Type { get; set; }
         public string Subtitle { get; private set; }
         public string Description { get; private set; }
         public string ImagePath { get; private set; }
@@ -141,6 +143,7 @@ namespace ILoveCupcakes.Data
                     JsonObject itemObject = itemValue.GetObject();
                     group.Items.Add(new SampleDataItem(itemObject["UniqueId"].GetString(),
                                                        itemObject["Title"].GetString(),
+                                                       itemObject["Type"].GetString(),
                                                        itemObject["Subtitle"].GetString(),
                                                        itemObject["ImagePath"].GetString(),
                                                        itemObject["Description"].GetString(),
