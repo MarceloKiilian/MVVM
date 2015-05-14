@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Runtime.Serialization;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -29,6 +32,55 @@ namespace StoringRetrievingSerlizing
             this.NavigationCacheMode = NavigationCacheMode.Required;
         }
 
+        private List<Car> buildObjectGraph()
+        {
+            var myCars = new List<Car>();
+
+            myCars.Add(new Car()
+            {
+                id = 1,
+                Make = "Oldsmobile",
+                Model = "Cutlas Supreme",
+                Year = 1985
+            });
+
+            myCars.Add(new Car() { id = 2, Make = "Geo", Model = "Prism", Year = 1993 });
+            myCars.Add(new Car() { id = 3, Make = "Ford", Model = "Escape", Year = 2005 });
+
+            return myCars;
+        }
+
+        private const string XMLFILENAME = "data.xml";
+
+        private async Task writeXMLAsync()
+        {
+            var myCars = buildObjectGraph();
+
+            var serializer = new DataContractSerializer(typeof(List<Car>));
+
+            using (var stream = await ApplicationData.Current.LocalFolder.OpenStreamForWriteAsync(XMLFILENAME, CreationCollisionOption.ReplaceExisting))
+            {
+                serializer.WriteObject(stream, myCars);
+            }
+
+            resultTextBlock.Text = "Escreveu com sucesso!";
+        }
+
+        private async Task readXMLAsync()
+        
+        {
+            string content = String.Empty;
+
+            var myStream = await ApplicationData.Current.LocalFolder.OpenStreamForReadAsync(XMLFILENAME);
+            
+            using (StreamReader reader = new StreamReader(myStream))
+            {
+                content = await reader.ReadToEndAsync();
+            }
+
+            resultTextBlock.Text = content;
+        }
+
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
         /// </summary>
@@ -43,6 +95,16 @@ namespace StoringRetrievingSerlizing
             // Windows.Phone.UI.Input.HardwareButtons.BackPressed event.
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
+        }
+
+        private async void writeButton_Click(object sender, RoutedEventArgs e)
+        {
+            await writeXMLAsync();
+        }
+
+        private async void readButton_Click(object sender, RoutedEventArgs e)
+        {
+            await readXMLAsync();
         }
     }
 }
